@@ -24,3 +24,5 @@
 .swiper-pagination-bullet-active{opacity: .2}
 .swiper-pagination{transition: 0.2s;opacity: 0}
 .swiper-pagination:hover{opacity: 1}
+
+.swiper-pagination .swiper-pagination-bullet-black{background: #000;}

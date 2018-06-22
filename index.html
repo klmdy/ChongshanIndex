@@ -257,6 +257,9 @@
 		</div>
 	</div>
 
+	<!-- 分页器 -->
+    <div class="swiper-pagination"></div>
+
     <!-- 滚动条 -->
     <div class="swiper-scrollbar gundong"></div>
 
@@ -283,6 +286,11 @@
     			dragSize: 40,
 			},
 
+			// 如果需要分页器
+		    pagination: {
+		      el: '.swiper-pagination',
+		    },
+
 			on: {
 			    progress: function(){
 			    	changeBtnColor();
@@ -306,8 +314,10 @@
 		var activeSlide = $(".swiper-slide-active");
 		if ($(activeSlide).hasClass("whitebg") && !$(".swiper-scrollbar-drag").hasClass("swiper-scrollbar-drag-black")) {
 			$(".swiper-scrollbar-drag").addClass("swiper-scrollbar-drag-black");
+			$(".swiper-pagination-bullet").addClass("swiper-pagination-bullet-black");
 		}else if(!$(activeSlide).hasClass("whitebg") && $(".swiper-scrollbar-drag").hasClass("swiper-scrollbar-drag-black")){
 			$(".swiper-scrollbar-drag").removeClass("swiper-scrollbar-drag-black");
+			$(".swiper-pagination-bullet").removeClass("swiper-pagination-bullet-black");
 		}
 	}      
 	</script>
