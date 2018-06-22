@@ -4,41 +4,261 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<script type="text/javascript" src="https://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
-	<style>
-		html,body{height: 100%;margin: 0}
-		.blackbg{background: #000;width: 100%;height: 100%;color: #fff;}
-		.logo{max-width: 15%;position: relative;top: 25%;left: 7%;}
-		.enName{position: absolute;bottom: 10%;right: 7%;max-width: 15%;}
-		.foodInfo{display: inline-block;position: relative;left: 10%;top: 50%;transform: translate(0,-50%);width: 20%;}
-		.foodName{font-size: 3em;margin-bottom: 20px;}
-		.enfoodName{font-size: 2.1em;margin-bottom: 50px;}
-		.foodMakeup{font-size: 1.5em;line-height: 10px;}
-		.foodImg{width: 50%;position: absolute;top: 50%;left: 35%;transform: translate(0,-52%);}
-		.page{position: absolute;left: 10%;bottom: 15%;font-size: 1.3em;}
-	</style>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/Swiper/4.3.0/js/swiper.min.js"></script>
+	<link href="https://cdn.bootcss.com/Swiper/4.3.0/css/swiper.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="blackbg" style="display: none;">
-		<img class="logo" src="img/logo.png">
-		<img class="enName" src="img/enName.png">
-	</div>
-	<div class="blackbg">
-		<div class="foodInfo">
-			<div class="foodName">百合煲秋葵</div>
-			<div class="enfoodName">Casserole of Lily Cooing Okra</div>
-			<div class="foodMakeup">
-				<p>Okra</p>
-				<p>Lily</p>
-				<p>Garlic</p>
-				<p>Peanut Oil</p>
-				<p>Refined Sauce</p>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide blackbg">
+				<img class="logo" src="img/logo.png">
+				<img class="enName" src="img/enName.png">
+			</div>
+			<div class="swiper-slide blackbg">
+				<div class="foodInfo">
+					<div class="foodName">百合煲秋葵</div>
+					<div class="enfoodName">Casserole of Lily Cooing Okra</div>
+					<div class="foodMakeup">
+						<p>Okra</p>
+						<p>Lily</p>
+						<p>Garlic</p>
+						<p>Peanut Oil</p>
+						<p>Refined Sauce</p>
+					</div>
+				</div>
+				<div class="page">1&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp20</div>
+				<img src="img/秋葵.jpg" class="foodImg">
+				<img class="enName" src="img/enName.png">
+			</div>
+			<div class="swiper-slide blackbg">
+				<div class="foodInfo">
+					<div class="foodName">冬阴功</div>
+					<div class="enfoodName">Tom Yam Kung</div>
+					<div class="foodMakeup">
+						<p>Vietnam Black Tiger Prawn</p>
+						<p>Straw Mushroom</p>
+						<p>Red Onion</p>
+						<p>Capsicum</p>
+						<p>Lime</p>
+						<p>Lemon Leaf</p>
+						<p>Lime</p>
+						<p>Lemongrass</p>
+						<p>Fish Sauce</p>
+						<p>Coconut Milk</p>
+						<p>Refined Sauce</p>
+					</div>
+				</div>
+				<div class="page">2&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp20</div>
+				<img src="img/冬阴功.jpg" class="foodImg">
+				<img class="enName" src="img/enName.png">
+			</div>
+			<div class="swiper-slide blackbg">
+				<div class="foodInfo">
+					<div class="foodName">泰式柠檬<br>香茅蒸贻贝</div>
+					<div class="enfoodName">Thai Lemongrass Steam Mussel</div>
+					<div class="foodMakeup">
+						<p>New Zealand Mussel</p>
+						<p>Lemongrass</p>
+						<p>Galanga</p>
+						<p>Lemon Leaf</p>
+						<p>Lime</p>
+						<p>Lemon Leaf</p>
+						<p>Basil</p>
+						<p>Lime</p>
+						<p>Refined Sauce</p>
+						<p>Refined Flavour</p>
+					</div>
+				</div>
+				<div class="page">3&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp20</div>
+				<img src="img/贻贝.jpg" class="foodImg">
+				<img class="enName" src="img/enName.png">
+			</div>
+			<div class="swiper-slide blackbg">
+				<div class="foodInfo">
+					<div class="foodName">槟城咖喱牛肉</div>
+					<div class="enfoodName">Phanaeng Nuah</div>
+					<div class="foodMakeup">
+						<p>Beef</p>
+						<p>Basil</p>
+						<p>Chilli</p>
+						<p>Coconut milk</p>
+						<p>Palm sugar</p>
+						<p>Fish Sauce</p>
+						<p>Lemon Leaf</p>
+					</div>
+				</div>
+				<div class="page">4&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp20</div>
+				<img src="img/咖喱牛肉.jpg" class="foodImg">
+				<img class="enName" src="img/enName.png">
+			</div>
+			<div class="swiper-slide blackbg">
+				<div class="foodInfo">
+					<div class="foodName">盐焗花螺</div>
+					<div class="enfoodName">Salt Baked Striped Snail</div>
+					<div class="foodMakeup">
+						<p>Striped Snail</p>
+						<p>Ginger</p>
+						<p>Chive</p>
+						<p>Peanut Oil</p>
+						<p>Salt Baked Powder</p>
+						<p>Grain Salt</p>
+						<p>Powder</p>
+						<p>Himalayan Pink Salt</p>
+					</div>
+				</div>
+				<div class="page">5&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp20</div>
+				<img src="img/盐焗花螺.jpg" class="foodImg">
+				<img class="enName" src="img/enName.png">
+			</div>
+			<div class="swiper-slide blackbg">
+				<div class="foodInfo">
+					<div class="foodName">金枪鱼蔬菜沙拉</div>
+					<div class="enfoodName">Tuna Salad</div>
+					<div class="foodMakeup">
+						<p>Tuna</p>
+						<p>Corn</p>
+						<p>Black Pepper</p>
+						<p>Head Lettuce</p>
+						<p>Purple Cabbage</p>
+						<p>Cucumber</p>
+						<p>Cherry Tomato</p>
+						<p>Black Olive</p>
+						<p>Deep-Roasted Sesame Dressing</p>
+					</div>
+				</div>
+				<div class="page">6&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp20</div>
+				<img src="img/金枪鱼沙拉.jpg" class="foodImg">
+				<img class="enName" src="img/enName.png">
+			</div>
+			<div class="swiper-slide blackbg">
+				<div class="foodInfo">
+					<div class="foodName">麻辣香锅</div>
+					<div class="enfoodName">Dry Spicy hot pot</div>
+					<div class="foodMakeup">
+						<p>Kelp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Coriander</p>
+						<p>Shrimp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Peanut Oil</p>
+						<p>Lettuce &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Refined Sauce</p>
+						<p>Beancurd</p>
+						<p>Lotus Root</p>
+						<p>Mushroom</p>
+						<p>Pork Luncheon Meat</p>
+						<p>Ginger</p>
+						<p>Garlic</p>
+						<p>Capsicum</p>
+						<p>Pepper</p>
+						<p></p>
+					</div>
+				</div>
+				<div class="page">7&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp20</div>
+				<img src="img/麻辣香锅.jpg" class="foodImg">
+				<img class="enName" src="img/enName.png">
+			</div>
+			<div class="swiper-slide blackbg">
+				<div class="foodInfo">
+					<div class="foodName">潮汕小炒皇</div>
+					<div class="enfoodName">Chaozhou Collection of Vegetables</div>
+					<div class="foodMakeup">
+						<p>Chive Flower &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Peanut Oil A</p>
+						<p>Pork &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Peanut Oil B</p>
+						<p>Taro &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Cornstarch</p>
+						<p>Konjak</p>
+						<p>Dried Shrimp</p>
+						<p>Ginger</p>
+						<p>Chive</p>
+						<p>Garlic</p>
+						<p>Salt</p>
+						<p>Powder</p>
+					</div>
+				</div>
+				<div class="page">8&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp20</div>
+				<img src="img/小炒皇.jpg" class="foodImg">
+				<img class="enName" src="img/enName.png">
+			</div>
+			<div class="swiper-slide blackbg">
+				<div class="foodInfo">
+					<div class="foodName">味噌青花鱼饭</div>
+					<div class="enfoodName">Miso Mackerel Meal</div>
+					<div class="foodMakeup">
+						<p>Mackerel</p>
+						<p>Rice</p>
+						<p>Chive</p>
+						<p>Eggplant</p>
+						<p>Green Pepper</p>
+						<p>Ginger</p>
+						<p>Sesame Oil</p>
+						<p>Chilli Powder</p>
+						<p>Refined Sauce A</p>
+						<p>Refined Sauce B</p>
+					</div>
+				</div>
+				<div class="page">9&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp20</div>
+				<img src="img/青花鱼饭.jpg" class="foodImg">
+				<img class="enName" src="img/enName.png">
+			</div>
+			<div class="swiper-slide blackbg">
+				<div class="foodInfo">
+					<div class="foodName">糖醋排骨</div>
+					<div class="enfoodName">Sweet and Sour Spare Ribs</div>
+					<div class="foodMakeup">
+						<p>Pork Ribs</p>
+						<p>Leek</p>
+						<p>Ginger</p>
+						<p>Balsamic Vinegar</p>
+						<p>White Granulated Sugar</p>
+						<p>White Sesame</p>
+						<p>Peanut Oil</p>
+						<p>Refined Sauce</p>
+					</div>
+				</div>
+				<div class="page">10&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp20</div>
+				<img src="img/糖醋排骨.jpg" class="foodImg">
+				<img class="enName" src="img/enName.png">
+			</div>
+			<div class="swiper-slide whitebg">
+				<div class="foodInfo">
+					<div class="foodName">干煸四季豆</div>
+					<div class="enfoodName">Dry Sauteed String Beans</div>
+					<div class="foodMakeup">
+						<p>Kidney Bean</p>
+						<p>Leek</p>
+						<p>Ginger</p>
+						<p>Garlic</p>
+						<p>Pork</p>
+						<p>Salt</p>
+						<p>Capsicum</p>
+						<p>Soy Sauce</p>
+						<p>White Granulated Sugar</p>
+					</div>
+				</div>
+				<div class="page">11&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp20</div>
+				<img src="img/四季豆.JPG" class="foodImg">
+				<img class="enName" src="img/enName-1.png">
+			</div>
+			<div class="swiper-slide whitebg">
+				<div class="foodInfo">
+					<div class="foodName">虾仁芦笋藜麦沙拉</div>
+					<div class="enfoodName">Asparagus Shrimp Quinoa Salad</div>
+					<div class="foodMakeup">
+						<p>Shrimp Meat</p>
+						<p>Asparagus</p>
+						<p>Quinoa</p>
+						<p>Cherry Tomato</p>
+						<p>Egg</p>
+						<p>Corn</p>
+						<p>Vinaigrette</p>
+					</div>
+				</div>
+				<div class="page">12&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp20</div>
+				<img src="img/虾仁沙拉.jpg" class="foodImg">
+				<img class="enName" src="img/enName-1.png">
 			</div>
 		</div>
-		<div class="page">1&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp20</div>
-		<img src="img/秋葵.jpg" class="foodImg">
-		<img class="enName" src="img/enName.png">
 	</div>
-	
+
+    <!-- 滚动条 -->
+    <div class="swiper-scrollbar gundong"></div>
 
 	<!-- 字体加载 -->
 	<script type="text/javascript">
@@ -46,6 +266,50 @@
 	   /*$youziku.load("#id1,.class1,h1", "148cabbf1cff478a84057c7f689cc6c7", "SourceHanSerif-B");*/
 	   /*．．．*/
 	   $youziku.draw();
+	</script>
+
+	<!-- 滑屏 -->
+	<script>        
+	  window.onload = function() {
+		var mySwiper = new Swiper ('.swiper-container', {
+		    direction: 'horizontal',
+		    loop: false,
+
+		    // 如果需要滚动条
+		    scrollbar: {
+			    el: '.swiper-scrollbar',
+			    hide: false,
+			    draggable: true,
+    			dragSize: 40,
+			},
+
+			on: {
+			    progress: function(){
+			    	changeBtnColor();
+			    },
+			    slideChangeTransitionStart:function(){
+			    	changeBtnColor();
+			    }
+			},
+		})  
+	}
+
+
+	$(".gundong").hover(function(){
+		console.log("123");
+		$(".swiper-pagination").css("opacity","1");
+	},function(){
+		$(".swiper-pagination").css("opacity","0");
+	});
+
+	function changeBtnColor(){
+		var activeSlide = $(".swiper-slide-active");
+		if ($(activeSlide).hasClass("whitebg") && !$(".swiper-scrollbar-drag").hasClass("swiper-scrollbar-drag-black")) {
+			$(".swiper-scrollbar-drag").addClass("swiper-scrollbar-drag-black");
+		}else if(!$(activeSlide).hasClass("whitebg") && $(".swiper-scrollbar-drag").hasClass("swiper-scrollbar-drag-black")){
+			$(".swiper-scrollbar-drag").removeClass("swiper-scrollbar-drag-black");
+		}
+	}      
 	</script>
 </body>
 </html>
