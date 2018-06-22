@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="https://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+	<style>
+		html,body{height: 100%;margin: 0}
+		.blackbg{background: #000;width: 100%;height: 100%;color: #fff;}
+		.logo{max-width: 15%;position: relative;top: 25%;left: 7%;}
+		.enName{position: absolute;bottom: 10%;right: 7%;max-width: 15%;}
+		.foodInfo{display: inline-block;position: relative;left: 10%;top: 50%;transform: translate(0,-50%);width: 20%;}
+		.foodName{font-size: 3em;margin-bottom: 20px;}
+		.enfoodName{font-size: 2.1em;margin-bottom: 50px;}
+		.foodMakeup{font-size: 1.5em;line-height: 10px;}
+		.foodImg{width: 50%;position: absolute;top: 50%;left: 35%;transform: translate(0,-52%);}
+		.page{position: absolute;left: 10%;bottom: 15%;font-size: 1.3em;}
+	</style>
+</head>
+<body>
+	<div class="blackbg" style="display: none;">
+		<img class="logo" src="img/logo.png">
+		<img class="enName" src="img/enName.png">
+	</div>
+	<div class="blackbg">
+		<div class="foodInfo">
+			<div class="foodName">百合煲秋葵</div>
+			<div class="enfoodName">Casserole of Lily Cooing Okra</div>
+			<div class="foodMakeup">
+				<p>Okra</p>
+				<p>Lily</p>
+				<p>Garlic</p>
+				<p>Peanut Oil</p>
+				<p>Refined Sauce</p>
+			</div>
+		</div>
+		<div class="page">1&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp20</div>
+		<img src="img/秋葵.jpg" class="foodImg">
+		<img class="enName" src="img/enName.png">
+	</div>
+	
+
+	<!-- 字体加载 -->
+	<script type="text/javascript">
+	   $youziku.load("body", "148cabbf1cff478a84057c7f689cc6c7", "SourceHanSerif-B");
+	   /*$youziku.load("#id1,.class1,h1", "148cabbf1cff478a84057c7f689cc6c7", "SourceHanSerif-B");*/
+	   /*．．．*/
+	   $youziku.draw();
+	</script>
+</body>
+</html>
