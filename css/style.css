@@ -9,7 +9,8 @@ html,body{height: 100%;margin: 0;font-family:'SourceHanSerif-12dadde9041d50d';}
 .foodName{font-size: 4.8vh;margin-bottom: 20px;}
 .enfoodName{font-size: 3vh;margin-bottom: 40px;}
 .foodMakeup{font-size: 2vh;line-height: 2px;}
-.foodImg{width: 56%;position: absolute;top: 50%;left: 32%;transform: translate(0,-51%);}
+.foodImg{width: 56%;position: absolute;top: 50%;left: 32%;transform: translate(0,-51%);z-index: 20;transition: 1s;}
+.foodImgdely{width: 56%;position: absolute;top: 50%;left: 32%;transform: translate(0,-51%);z-index: 10}
 .page{position: absolute;left: 10%;bottom: 15%;font-size: 2.1vh;}
 
 /*滚动条*/
